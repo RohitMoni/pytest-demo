@@ -27,3 +27,18 @@ def test_numWaysToClimb():
     assert(getNumWaysToClimb(3, {1, 3, 5}) == 2)
     assert(getNumWaysToClimb(4, {1, 3, 5}) == 3)
 
+testdata = [
+    (1, {1, 2}, 1),
+    (2, {1, 2}, 2),
+    (3, {1, 2}, 3),
+    (4, {1, 2}, 5),
+    (1, {1, 3, 5}, 1),
+    (2, {1, 3, 5}, 1),
+    (3, {1, 3, 5}, 2),
+    (4, {1, 3, 5}, 3),
+]
+
+import pytest
+@pytest.mark.parametrize("steps, possibilities, result", testdata)
+def test_numWaysToClimbP(steps, possibilities, result):
+    assert(getNumWaysToClimb(steps, possibilities) == result)
