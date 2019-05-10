@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "env/bin/python",
+    "python.testing.pyTestEnabled": true,
+    "python.testing.pyTestArgs": [
+        "demo_1"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+}
